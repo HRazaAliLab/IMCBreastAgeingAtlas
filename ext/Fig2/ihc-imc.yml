@@ -1,0 +1,11 @@
+name: ihc-imc
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pyarrow
+  - numpy
+  - scipy
+  - pandas
+prefix: /Users/gupta02/.conda/envs/ihc-imc
