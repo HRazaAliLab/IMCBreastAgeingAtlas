@@ -38,11 +38,11 @@ def repo_root_from_this_file() -> Path:
 
 
 MARKER_COLS = [
-    "CD163", "CD20", "Cyclin D1", "CD56", "CD45", "CD8",
+    "CD163", "CD20", "CD56", "CD45", "CD8",
     "GATA3", "CD11c", "CD3", "ER", "SMA", "PR", "HER2",
-    "PD-1", "IDO", "AR", "PD-L1", "GZMB", "Ki67", "CD4",
+    "PD-1", "AR", "PD-L1", "GZMB", "Ki67", "CD4",
     "CK5/14", "TCF1", "PDGFRbeta", "CD31", "CK7", "PDPN",
-    "HLA-ABC", "FOXA1", "panCK", "pH2AX", "CK8/18",
+    "HLA-ABC", "FOXA1", "panCK", "CK8/18",
     "Vimentin", "Calponin", "Caveolin-1", "CD15", "MPO",
     "HLA-DR", "CD68", "CD79a", "CA9", "LDHA",
 ]

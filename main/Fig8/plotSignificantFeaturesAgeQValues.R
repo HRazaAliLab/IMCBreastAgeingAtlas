@@ -85,7 +85,7 @@ expr_by_patient <- cellsclin[
 ]
 expr_by_patient <- na.omit(expr_by_patient)
 
-columns_to_remove <- c("Cyclin D1", "IDO", "FOXP3", "pH2AX", "DNA1", "DNA2", "CK19")
+columns_to_remove <- c("DNA1", "DNA2")
 drop_present <- intersect(columns_to_remove, names(expr_by_patient))
 if (length(drop_present) > 0) expr_by_patient[, (drop_present) := NULL]
 

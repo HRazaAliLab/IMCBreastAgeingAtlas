@@ -12,6 +12,12 @@ clinical <- getClinical()
 
 cellsclin <- merge(cells, clinical[, .(ImageID, PatientID, Age)], by = "ImageID", all.x = TRUE)
 
+communityannotations <- fread(here("data", "derived", "spatialClusterAnnotation.csv"))
+if (!("SpatialClusterID" %in% names(communityannotations)) && ("ClusterID" %in% names(communityannotations))) {
+  setnames(communityannotations, "ClusterID", "SpatialClusterID")
+}
+communityannotations <- as.data.table(communityannotations)
+
 # ============================================================
 # RGB + contours + trimmed overlay
 # ============================================================
@@ -33,7 +39,7 @@ imgPaths <- getImagePaths(imgID)
 contours <- getContour(imgPaths$Cell)
 contours <- merge(contours, cellSub, by = "CellID", all.x = TRUE)
 
-p <- mkRGBplot(imgID, RGB = c("pH2AX", "FOXP3", "IDO"), noRed = TRUE)$plot +
+p <- mkRGBplot(imgID, RGB = c("CD68", "MPO", "CA9"), noRed = TRUE)$plot +
   geom_polygon(data = contours,
                aes(x = x, y = y, group = CellID),
                colour = "darkgray", fill = NA, linewidth = 0.2) +

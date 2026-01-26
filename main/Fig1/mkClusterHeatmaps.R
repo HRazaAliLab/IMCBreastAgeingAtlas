@@ -23,7 +23,7 @@ epiMarkers <- select_markers(
 
 tmeMarkers <- select_markers(
   panel$panel,
-  "CK|Ki67|DNA|H3|ER|PR|AR|FOXA1|pH2AX|GATA3|Cyclin D1|IDO|FOXP3",
+  "CK|Ki67|DNA|H3|ER|PR|AR|FOXA1|GATA3",
   invert = TRUE
 )
 
