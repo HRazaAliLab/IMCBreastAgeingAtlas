@@ -2,9 +2,7 @@
 
 Code to reproduce analyses and figures from:
 
-Gupta P*, Lee E*, et al.  
-**Single-cell spatial atlas of the ageing human breast**  
-_Nature Aging_ (2026)
+Gupta P*, Lee E*, Masqué Soler N, et al. **Single-cell spatial atlas of the aging human breast.** _Nat Aging_. 2026;6(4):916-931. doi:[10.1038/s43587-026-01104-3](https://www.nature.com/articles/s43587-026-01104-3)
 
 Using imaging mass cytometry (IMC), this study profiles >3 million cells from 527 normal human breast samples to characterize age-associated changes in cellular composition, tissue architecture, and spatial interactions.
 
